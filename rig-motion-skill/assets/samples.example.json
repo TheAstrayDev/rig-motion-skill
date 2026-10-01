@@ -1,0 +1,16 @@
+{
+  "schema": "rig-motion.samples.v1",
+  "space": "world",
+  "height": 2.0,
+  "loop": true,
+  "loop_points": ["torso"],
+  "loop_rotations": ["head"],
+  "contacts": [{"point": "left_contact", "start": 0.0, "end": 1.0}],
+  "samples": [
+    {"t": 0.0, "points": {"torso": [0, 0, 1], "left_contact": [-0.2, 0, 0]}, "rotations": {"head": [1, 0, 0, 0]}},
+    {"t": 0.25, "points": {"torso": [0, 0, 1.001], "left_contact": [-0.2, 0, 0]}, "rotations": {"head": [1, 0, 0, 0]}},
+    {"t": 0.5, "points": {"torso": [0, 0, 1.002], "left_contact": [-0.2, 0, 0]}, "rotations": {"head": [1, 0, 0, 0]}},
+    {"t": 0.75, "points": {"torso": [0, 0, 1.001], "left_contact": [-0.2, 0, 0]}, "rotations": {"head": [1, 0, 0, 0]}},
+    {"t": 1.0, "points": {"torso": [0, 0, 1], "left_contact": [-0.2, 0, 0]}, "rotations": {"head": [-1, 0, 0, 0]}}
+  ]
+}

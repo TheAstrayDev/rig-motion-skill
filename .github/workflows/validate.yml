@@ -1,0 +1,27 @@
+name: Validate package and helpers
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.10", "3.14"]
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Check package
+        run: python -B tools/validate_package.py
+      - name: Test helpers
+        run: python -B -m unittest discover -s rig-motion-skill/scripts/tests -v

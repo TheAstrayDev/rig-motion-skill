@@ -1,0 +1,27 @@
+{
+  "schema": "rig-motion.camera-impulse.v1",
+  "fps": 30,
+  "frame_start": 1,
+  "frame_end": 151,
+  "height": 2,
+  "events": [
+    {
+      "time": 2.2,
+      "duration": 0.35,
+      "translation_h": [0.002, 0.004, 0.001],
+      "rotation_deg": [0.6, 0.25, 0.15],
+      "frequencies_hz": [3, 6.5, 10],
+      "decay": 6,
+      "seed": 23
+    },
+    {
+      "time": 3.5,
+      "duration": 0.55,
+      "translation_h": [0.001, 0.007, 0.002],
+      "rotation_deg": [0.8, 0.15, 0.1],
+      "frequencies_hz": [2.5, 5, 8],
+      "decay": 5,
+      "seed": 41
+    }
+  ]
+}
